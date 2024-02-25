@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/theupdateframework/go-tuf/v2 v2.0.0-20240223092044-1e7978e83f63
-	helm.sh/helm/v3 v3.14.0
+        helm.sh/helm/v3 v3.14.2
 )
 
 require (
