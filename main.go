@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/theupdateframework/go-tuf/v2/metadata"
 	helm_chart "helm.sh/helm/v3/pkg/chart"
 	"html"
 	"log"
@@ -12,7 +11,7 @@ import (
 func main() {
 	v := helm_chart.Chart{}
 	v = v
-	fmt.Println(metadata.SPECIFICATION_VERSION)
+	//fmt.Println(metadata.SPECIFICATION_VERSION)
 	// comment
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
