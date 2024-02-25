@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"github.com/theupdateframework/go-tuf/v2/metadata"
+	helm_chart "helm.sh/helm/v3/pkg/chart"
 	"html"
 	"log"
 	"net/http"
 )
 
 func main() {
+	v := helm_chart.Chart{}
+	v = v
 	fmt.Println(metadata.SPECIFICATION_VERSION)
 	// comment
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
